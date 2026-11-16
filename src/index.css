@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f7f1;
+  color: #1f2d24;
+}
+
+.contenedor {
+  width: min(960px, 92%);
+  margin: 0 auto;
+}
+
+header {
+  padding: 24px 0;
+  border-bottom: 2px solid #c5dcc8;
+}
+
+.marca {
+  margin: 0 0 12px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #2e6b3e;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+a {
+  color: #2e6b3e;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main {
+  padding: 24px 0;
+}
+
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0;
+}
+
+button {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 6px;
+  background: #2e6b3e;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.tarjeta {
+  padding: 20px;
+  border: 1px solid #c5dcc8;
+  border-radius: 8px;
+  background: white;
+}
+
+.tarjeta h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.precio {
+  font-weight: bold;
+}
+
+.error {
+  padding: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #c83838;
+  border-radius: 8px;
+  background: #fff0f0;
+  color: #8b2020;
+}
